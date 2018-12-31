@@ -1159,7 +1159,8 @@ img {
 .announcement {
   background-color: #fff4e2;
   width: 100%;
-  padding: 1em; }
+  padding: 1em;
+  box-sizing: border-box; }
   .announcement .container {
     display: block;
     max-width: 600px; }
