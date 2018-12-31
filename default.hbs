@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+
+  {{! Google fonts }}
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700,900" rel="stylesheet">
+
+  {{ ghost_head }}
+  <link rel="shortcut icon" href="http://www.paulmederos.com/favicon.png" type="image/x-icon">
+</head>
+<body class="{{body_class}}">
+
+  <div class="container">
+    <aside class="sidebar">
+      {{> "sidebar"}}
+    </aside>
+    <main class="content">
+      {{{ body }}}
+    </main>
+  </div>
+
+  {{ ghost_foot }}
+  <script type="text/javascript" src="{{asset "js/scripts.js"}}"></script>
+</body>
+</html>

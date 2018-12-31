@@ -1,0 +1,17 @@
+{{!< default}}
+
+<section class="blog" name="blog" id="blog">
+  {{#foreach posts}}
+    <div class="post">
+      <h2 class="post-title">
+        <a href="{{url}}">
+          {{{title}}}
+        </a>
+      </h2>
+      <p class="post-excerpt">{{excerpt}}...</p>
+      <time class="post-date" datetime="{{date format='MMMM-YYYY'}}">
+        <a href="{{url}}">Posted {{date format="MMMM YYYY"}}</a>
+      </time>
+    </div>
+  {{/foreach}}
+</section>

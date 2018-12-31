@@ -1,0 +1,121 @@
+
+/*  =======================
+    Components
+=========================== */
+
+.container {
+  width:92%;
+  max-width:1020px;
+  margin: 0 auto;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+
+  @include mq-personal {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 246px;
+  padding-top: 16rem;
+
+  @include mq-personal {
+    align-self: flex-end;
+    max-width: none;
+    padding-top: 2rem;
+    border-bottom: 2px solid rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.02);
+  }
+}
+
+.sidebar-nav {
+  @include mq-personal {
+    padding: 0 4%;
+    margin-bottom: 2rem;
+  }
+}
+
+.sidebar-item {
+  list-style: none;
+}
+
+.sidebar-item a {
+  display: block;
+  padding: .5em 0;
+
+  &:hover .emoji { text-decoration: none; display: inline-block; }
+}
+
+.content {
+  padding-top:16rem;
+  max-width:540px;
+
+  @include mq-personal {
+    padding-top: 4rem;
+  }
+
+  ul, ol {
+    box-sizing:border-box;
+    li { margin-bottom: 1em;}
+  }
+}
+
+.header {
+  background-color:rgba(255,255,255,.96);
+  border-bottom:1px solid rgba(0,0,0,.08);
+  height:64px;
+  position: relative;
+  z-index:5;
+
+  @include mq-personal {
+    height: auto;
+  }
+}
+
+/*  =======================
+    Home page
+=========================== */
+
+.blog .post {
+  margin-bottom: 4em;
+}
+
+.post {
+  @include mq-personal {
+    padding: 0 4%;
+  }
+}
+
+.post-excerpt {
+  margin-bottom: 1em;
+}
+
+.post-date {
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  a {
+    text-decoration: none;
+    color: rgba(0,0,0,.3);
+  }
+}
+
+
+/*  =======================
+    Post page
+=========================== */
+
+.post-content {
+  padding-bottom:4em;
+  margin-bottom:4em;
+  border-bottom:2px solid #EFEFEF;
+}
+
+.post-footer {
+  position: relative;
+  padding-bottom: 6em;
+}
