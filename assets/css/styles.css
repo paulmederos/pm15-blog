@@ -1156,6 +1156,17 @@ img {
       flex-direction: column;
       width: 100%; } }
 
+.announcement {
+  background-color: #fff4e2;
+  width: 100%;
+  padding: 1em; }
+  .announcement .container {
+    display: block;
+    max-width: 600px; }
+  .announcement p {
+    padding: 0;
+    margin: 0; }
+
 .sidebar {
   width: 100%;
   max-width: 246px;
