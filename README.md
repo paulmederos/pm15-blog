@@ -9,3 +9,7 @@ Made with ❤️ in California. Hosted on [DigitalOcean](https://www.digitalocea
 
 1. Run `yarn install` to get the goods
 2. Run `yarn grunt` to kick off Grunt (watch SASS / compile JS)
+
+### Deploy
+
+After updating theme, you need to restart the `ghost` service via ssh console on DigitalOcean. I can't remember how to login to the ghost user, so after uploading the changes, I just run the `reboot` command on th droplet to restart the thing :shrug:
