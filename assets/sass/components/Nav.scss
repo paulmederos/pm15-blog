@@ -1,0 +1,21 @@
+.Nav {
+  padding: 2.1rem 0;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.Nav__intro {
+  margin-bottom: 2em;
+  @include media-sm-up {
+    margin-bottom: 0;
+  }
+}
+
+.Nav__item {
+  margin-right: 2em;
+  
+  @include media-sm-up {
+    margin-left: 2em;
+    margin-right: 0;
+  }
+}

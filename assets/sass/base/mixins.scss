@@ -1,0 +1,30 @@
+$material-curve: cubic-bezier(.62,.28,.23,.99);
+
+// For displaying retina assets
+// Pulled from @Stammy: http://paulstamatiou.com/responsive-retina-blog-development-part-2
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (-o-min-device-pixel-ratio: 13/10),
+  only screen and (min-resolution: 120dpi) {
+    @content;
+  }
+}
+
+@mixin transition($type: all, $duration: .32s, $function: $material-curve){
+  transition: $type $duration $function;
+}
+
+// @custom-media --sm-viewport only screen and (min-width: 48em);
+// @custom-media --md-viewport only screen and (min-width: 64em);
+// @custom-media --lg-viewport only screen and (min-width: 75em);
+@mixin media-sm-up {
+  @media (min-width: 48em) { @content; }
+}
+
+@mixin media-md-up {
+  @media (min-width: 64em) { @content; }
+}
+
+@mixin media-lg-up {
+  @media (min-width: 75em) { @content; }
+}

@@ -9,10 +9,18 @@
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "^0.11.1",
     "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "grunt-cli": "^1.2.0"
+  },
+  "scripts": {
+    "compile:css": "node-sass sass/styles.scss style.css && node-sass sass/woocommerce.scss woocommerce.css && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "start": "yarn watch",
+    "watch": "node-sass assets/sass/index.scss assets/css/style.css --watch"
   },
   "config": {
     "posts_per_page": 25

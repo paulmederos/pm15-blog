@@ -5,7 +5,7 @@ module.exports = (grunt) ->
     sass:
       dist:
         files:
-          "assets/css/styles.css": "assets/sass/core.scss"
+          "assets/css/styles.css": "assets/sass/index.scss"
     coffee:
       compile:
         expand: true
