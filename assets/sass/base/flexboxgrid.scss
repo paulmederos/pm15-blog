@@ -498,6 +498,11 @@
 }
 
 @media only screen and (min-width: 64em) {
+  .container-fluid {
+    padding-right: 6.4rem;
+    padding-left: 6.4rem;
+  }
+
   .container {
     width: 65rem;
   }

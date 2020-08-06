@@ -6,14 +6,26 @@
 
 .Nav__intro {
   margin-bottom: 2em;
+
   @include media-sm-up {
     margin-bottom: 0;
   }
 }
 
+.Logo {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: auto 0;
+  background-image: url('/assets/images/Logo@2x.png');
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center;
+}
+
 .Nav__item {
-  margin-right: 2em;
-  
+  margin: auto 2em auto 2em;
+
   @include media-sm-up {
     margin-left: 2em;
     margin-right: 0;

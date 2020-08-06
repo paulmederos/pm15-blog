@@ -1,19 +1,21 @@
 {{!< default}}
 
-<div class="row center-xs text-left">
-  <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 col-xl-4">
-    <section class="Blog" name="blog" id="blog">
-      {{#foreach posts}}
-        <a class="PostItem" href="{{url}}">
-          <h2 class="PostItem__title">
-            {{{title}}}
-          </h2>
-          <p class="PostItem__excerpt">{{excerpt}}</p>
-          <time class="PostItem__date" datetime="{{date format='MMMM-YYYY'}}">
-            {{date format="MMM Do, YYYY"}}
-          </time>
-        </a>
-      {{/foreach}}
-    </section>
+<div class="container-fluid">
+  <div class="row center-xs text-left">
+    <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6 col-xl-5">
+      <section class="Blog" name="blog" id="blog">
+        {{#foreach posts}}
+          <a class="PostItem" href="{{url}}">
+            <h2 class="PostItem__title">
+              {{{title}}}
+            </h2>
+            <p class="PostItem__excerpt">{{excerpt}}</p>
+            <time class="PostItem__date" datetime="{{date format='MMMM-YYYY'}}">
+              {{date format="MMM Do, YYYY"}}
+            </time>
+          </a>
+        {{/foreach}}
+      </section>
+    </div>
   </div>
 </div>
