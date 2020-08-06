@@ -1589,7 +1589,7 @@ body {
   font-family: "Inter", "Helvetica Neue", "helvetica", sans-serif;
   font-size: 1.8rem;
   line-height: 1.32;
-  color: #595050;
+  color: #2C3840;
   background-color: #fafafa; }
 
 @supports (font-variation-settings: normal) {
@@ -1609,24 +1609,24 @@ h4, h5, h6 {
   -ms-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  color: #595050;
+  color: #2C3840;
   line-height: 1.32;
   margin: 0 0 0.3em 0;
   font-family: "Inter", "Helvetica Neue", "helvetica", sans-serif; }
 
 h1, h2 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   margin-bottom: 1em;
   color: #333;
   font-weight: 600; }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 1.8rem; }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 1.8rem; }
 
 h5 {
@@ -1981,8 +1981,74 @@ a.Button {
   display: inline-block;
   text-decoration: none; }
 
+.CaseStudy {
+  padding-top: 0; }
+  .CaseStudy a {
+    text-decoration: underline;
+    color: #595050; }
+  .CaseStudy a:hover {
+    text-decoration-style: wavy;
+    color: black; }
+
+.CaseStudy__hero {
+  background-color: #fafafa;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.CaseStudy__title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding-top: 6.4rem; }
+
+.CaseStudy__content {
+  font-size: 1.8rem;
+  padding-bottom: 4em;
+  margin-bottom: 4em; }
+
+.CaseStudy__footer {
+  position: relative;
+  padding-bottom: 6em; }
+
+.CaseStudy .kg-image-card {
+  margin: 3.2rem auto; }
+
+.CollabBar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2222;
+  background-color: rgba(255, 242, 237, 0.97);
+  backdrop-filter: blur(6px); }
+  .CollabBar.--fixed {
+    position: fixed; }
+  .CollabBar .CollabBar__text {
+    margin: auto;
+    padding: 1.8rem 0; }
+  .CollabBar a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2D2222;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .CollabBar a:hover {
+    color: black;
+    text-decoration-style: wavy;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .CollabBar a:visited {
+    color: black; }
+
 .Blog {
   padding-top: 12.8rem; }
+
+.Posts {
+  padding-bottom: 9.6rem; }
 
 .PostItem {
   display: block;
@@ -2017,7 +2083,7 @@ a.Button {
   background-color: white; }
 
 .Nav__intro {
-  margin-bottom: 2em; }
+  margin-bottom: auto; }
   @media (min-width: 48em) {
     .Nav__intro {
       margin-bottom: 0; } }
@@ -2033,14 +2099,18 @@ a.Button {
   background-position: center; }
 
 .Nav__item {
-  margin: auto 2em auto 2em; }
+  margin: auto 1em;
+  font-size: 1.2rem; }
   @media (min-width: 48em) {
     .Nav__item {
       margin-left: 2em;
-      margin-right: 0; } }
+      margin-right: 0;
+      font-size: 1.5rem; } }
 
 .Post {
   padding-top: 12.8rem; }
+  .Post.CaseStudy {
+    padding-top: 0; }
 
 .Post__title {
   font-size: 4.4rem;
@@ -2062,13 +2132,20 @@ a.Button {
   background-color: white; }
 
 .Portfolio__header {
-  padding-top: 19.2rem;
-  margin-bottom: 24rem; }
+  padding-top: 16rem;
+  margin-bottom: 16rem; }
+  @media (min-width: 48em) {
+    .Portfolio__header {
+      padding-top: 19.2rem;
+      margin-bottom: 19.2rem; } }
 
 .Portfolio__title {
   font-weight: 350;
-  font-size: 6.4rem;
+  font-size: 4.2rem;
   color: #1D2022; }
+  @media (min-width: 48em) {
+    .Portfolio__title {
+      font-size: 6.4rem; } }
   .Portfolio__title b {
     font-weight: 600; }
 
@@ -2077,13 +2154,16 @@ a.Button {
 
 .PortfolioItem__graphic {
   display: block;
-  height: 420px;
+  height: 240px;
   background-color: #eaeaea;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  border-radius: 8px;
-  margin-right: 2.1rem; }
+  background-size: cover; }
+  @media (min-width: 48em) {
+    .PortfolioItem__graphic {
+      height: 420px;
+      margin-right: 2.1rem;
+      border-radius: 8px; } }
   .PortfolioItem__graphic.territory-brand {
     background-image: url("/assets/images/territory-brand@2x.png"); }
   .PortfolioItem__graphic.ps-markets {
@@ -2092,7 +2172,10 @@ a.Button {
     background-image: url("/assets/images/ps-menu@2x.png"); }
 
 .PortfolioItem__content {
-  padding: 0 1em; }
+  padding: 1em 0; }
+  @media (min-width: 48em) {
+    .PortfolioItem__content {
+      padding: 0 1em; } }
 
 .PortfolioItem__context {
   font-size: 1.3rem;

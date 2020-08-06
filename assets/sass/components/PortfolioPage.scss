@@ -5,14 +5,24 @@
 }
 
 .Portfolio__header {
-  padding-top: 19.2rem;
-  margin-bottom: 24rem;
+  padding-top: 16rem;
+  margin-bottom: 16rem;
+
+  @include media-sm-up {
+    padding-top: 19.2rem;
+    margin-bottom: 19.2rem;
+  }
 }
 
 .Portfolio__title {
   font-weight: 350;
-  font-size: 6.4rem;
+  font-size: 4.2rem;
+
   color: #1D2022;
+
+  @include media-sm-up {
+    font-size: 6.4rem;
+  }
 
   b { font-weight: 600; }
 }
@@ -23,13 +33,17 @@
 
  .PortfolioItem__graphic {
    display: block;
-   height: 420px;
+   height: 240px;
    background-color: #eaeaea;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   border-radius: 8px;
-   margin-right: 2.1rem;
+
+   @include media-sm-up {
+     height: 420px;
+     margin-right: 2.1rem;
+     border-radius: 8px;
+   }
 
    &.territory-brand { background-image: url('/assets/images/territory-brand@2x.png'); }
    &.ps-markets      { background-image: url('/assets/images/ps-markets@2x.png'); }
@@ -37,7 +51,11 @@
  }
 
  .PortfolioItem__content {
-   padding: 0 1em;
+   padding: 1em 0;
+
+   @include media-sm-up {
+     padding: 0 1em;
+   }
  }
 
  .PortfolioItem__context {

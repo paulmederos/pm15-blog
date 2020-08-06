@@ -27,7 +27,7 @@ body {
   font-family: $primary_font_stack;
   font-size: 1.8rem;
   line-height: 1.32;
-  color: $color_warm_slate;
+  color: $color_dark;
   background-color: #fafafa;
 }
 
@@ -47,27 +47,27 @@ h4, h5, h6 {
   -ms-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  color: $color_warm_slate;
+  color: $color_dark;
   line-height: 1.32;
   margin: 0 0 0.3em 0;
   font-family: $primary_font_stack;
 }
 
 h1, h2 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   margin-bottom:1em;
   color: #333;
   font-weight: 600;
 }
 
 h3 {
-  font-size:1.4rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 1.8rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
 

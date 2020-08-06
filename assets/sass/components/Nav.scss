@@ -5,7 +5,7 @@
 }
 
 .Nav__intro {
-  margin-bottom: 2em;
+  margin-bottom: auto;
 
   @include media-sm-up {
     margin-bottom: 0;
@@ -24,10 +24,12 @@
 }
 
 .Nav__item {
-  margin: auto 2em auto 2em;
+  margin: auto 1em;
+  font-size: 1.2rem;
 
   @include media-sm-up {
     margin-left: 2em;
     margin-right: 0;
+    font-size: 1.5rem;
   }
 }

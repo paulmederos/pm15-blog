@@ -1,0 +1,38 @@
+.CollabBar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2222;
+  background-color: transparentize(#FFF2ED, .03);
+  backdrop-filter: blur(6px);
+
+  &.--fixed { position: fixed; }
+
+  .CollabBar__text {
+    margin: auto;
+    padding: 1.8rem 0;
+  }
+
+  a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2D2222;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    @include transition;
+  }
+
+  a:hover {
+    color: black;
+
+    text-decoration-style: wavy;
+    @include transition;
+  }
+
+  a:visited {
+    color: black;
+  }
+}

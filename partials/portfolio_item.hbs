@@ -9,7 +9,13 @@
         <h5 class="PortfolioItem__context">{{year}} · {{role}} · {{company}}</h5>
         <h3 class="PortfolioItem__title">{{title}}</h3>
         <p class="PortfolioItem__snippet">{{snippet}}</p>
-        <a href="{{ study_url }}" class="Button">Read the case study -></a>
+        <a href="{{ study_url }}" class="Button">
+          {{# if cta_text }}
+            {{ cta_text }}
+          {{else}}
+            Read the case study ->
+          {{/if}}
+        </a>
       </div>
     </div>
   </div>
