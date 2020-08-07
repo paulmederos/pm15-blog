@@ -2021,6 +2021,8 @@ a.Button {
   .CaseStudy__content a:hover {
     text-decoration-style: wavy;
     color: black; }
+  .CaseStudy__content h3 {
+    margin-top: 6.4rem; }
 
 .CaseStudy__footer {
   position: relative;
