@@ -2023,6 +2023,12 @@ a.Button {
     color: black; }
   .CaseStudy__content h3 {
     margin-top: 9.6rem; }
+  .CaseStudy__content figcaption {
+    font-size: 1.3rem;
+    color: #637282;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 4.4rem; }
 
 .CaseStudy__footer {
   position: relative;
