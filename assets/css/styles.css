@@ -162,6 +162,11 @@ table {
   -o-animation-duration: .5s;
   animation-duration: .5s; }
 
+.animated.delayed-short {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
+  /* Safari and Chrome */ }
+
 .animated.delayed {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
@@ -1982,31 +1987,40 @@ a.Button {
   text-decoration: none; }
 
 .CaseStudy {
-  padding-top: 0; }
-  .CaseStudy a {
-    text-decoration: underline;
-    color: #595050; }
-  .CaseStudy a:hover {
-    text-decoration-style: wavy;
-    color: black; }
+  padding-top: 0;
+  background-color: white; }
+  .CaseStudy .container-fluid {
+    max-width: 1200px; }
 
 .CaseStudy__hero {
   background-color: #fafafa;
-  height: 360px;
+  height: 210px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  @media (min-width: 48em) {
+    .CaseStudy__hero {
+      height: 360px; } }
 
 .CaseStudy__title {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  margin-bottom: 1em;
+  margin-bottom: 6.4rem;
   padding-top: 6.4rem; }
+  @media (min-width: 48em) {
+    .CaseStudy__title {
+      font-size: 4.4rem; } }
 
 .CaseStudy__content {
   font-size: 1.8rem;
   padding-bottom: 4em;
   margin-bottom: 4em; }
+  .CaseStudy__content a {
+    text-decoration: underline;
+    color: #595050; }
+  .CaseStudy__content a:hover {
+    text-decoration-style: wavy;
+    color: black; }
 
 .CaseStudy__footer {
   position: relative;
@@ -2096,7 +2110,18 @@ a.Button {
   background-image: url("/assets/images/Logo@2x.png");
   background-repeat: no-repeat;
   background-size: 36px 36px;
-  background-position: center; }
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .Logo:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .Logo:active {
+    transform: scale(0.92);
+    box-shadow: 0;
+    transition: all 0.32s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
 
 .Nav__item {
   margin: auto 1em;

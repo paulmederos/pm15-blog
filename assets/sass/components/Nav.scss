@@ -21,6 +21,22 @@
   background-repeat: no-repeat;
   background-size: 36px 36px;
   background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  @include transition;
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+    @include transition;
+  }
+
+  &:active {
+    transform: scale(.92);
+    box-shadow: 0;
+    @include transition;
+  }
+
 }
 
 .Nav__item {

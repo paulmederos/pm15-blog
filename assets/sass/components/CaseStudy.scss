@@ -1,33 +1,42 @@
 .CaseStudy {
   padding-top: 0;
+  background-color: white;
 
-  a { text-decoration: underline; color: $color_warm_slate; }
-  a:hover { text-decoration-style: wavy;  color: black; }
+  .container-fluid { max-width: 1200px; }
 }
 
 .CaseStudy__hero {
   background-color: #fafafa;
-  height: 360px;
+  height: 210px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include media-sm-up {
+    height: 360px;
+  }
 }
 
-.CaseStudy__header {
-
-}
+.CaseStudy__header {}
 
 .CaseStudy__title {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  margin-bottom: 1em;
+  margin-bottom: 6.4rem;
   padding-top: 6.4rem;
+
+  @include media-sm-up {
+    font-size: 4.4rem;
+  }
 }
 
 .CaseStudy__content {
   font-size: 1.8rem;
   padding-bottom:4em;
   margin-bottom:4em;
+
+  a { text-decoration: underline; color: $color_warm_slate; }
+  a:hover { text-decoration-style: wavy;  color: black; }
 }
 
 .CaseStudy__footer {
