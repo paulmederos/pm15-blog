@@ -2179,7 +2179,7 @@ a.Button {
 
 .Portfolio__title {
   font-weight: 350;
-  font-size: 4.2rem;
+  font-size: 3.4rem;
   color: #1D2022; }
   @media (min-width: 48em) {
     .Portfolio__title {
@@ -2192,7 +2192,7 @@ a.Button {
 
 .PortfolioItem__graphic {
   display: block;
-  height: 240px;
+  height: 340px;
   background-color: #eaeaea;
   background-repeat: no-repeat;
   background-position: center;
@@ -2202,6 +2202,8 @@ a.Button {
       height: 420px;
       margin-right: 2.1rem;
       border-radius: 8px; } }
+  .PortfolioItem__graphic.fitt-redesign {
+    background-image: url("/assets/images/fitt-redesign@2x.png"); }
   .PortfolioItem__graphic.territory-brand {
     background-image: url("/assets/images/territory-brand@2x.png"); }
   .PortfolioItem__graphic.ps-markets {
@@ -2216,20 +2218,36 @@ a.Button {
       padding: 0 1em; } }
 
 .PortfolioItem__context {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: .05em;
   text-transform: uppercase;
   color: #888888; }
+  @media (min-width: 48em) {
+    .PortfolioItem__context {
+      font-size: 1.3rem; } }
 
 .PortfolioItem__title {
   color: #1D2022;
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.24;
   text-transform: normal;
   margin-bottom: 1em; }
+  @media (min-width: 48em) {
+    .PortfolioItem__title {
+      font-size: 3.6rem; } }
 
 .PortfolioItem__snippet {
   color: #333333;
-  padding-right: 2.1rem; }
+  padding-right: 2.1rem;
+  font-size: 1.5rem; }
+  @media (min-width: 48em) {
+    .PortfolioItem__snippet {
+      font-size: 1.8rem; } }
+
+.PortfolioItem__cta {
+  font-size: 1.3rem; }
+  @media (min-width: 48em) {
+    .PortfolioItem__cta {
+      font-size: 1.5rem; } }
