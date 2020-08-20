@@ -1,10 +1,10 @@
-.Portfolio {
+.Work {
   min-height: 100vh;
   padding-bottom: 9.6rem;
   background-color: white;
 }
 
-.Portfolio__header {
+.Work__header {
   padding-top: 16rem;
   margin-bottom: 16rem;
 
@@ -14,7 +14,7 @@
   }
 }
 
-.Portfolio__title {
+.Work__title {
   font-weight: 350;
   font-size: 2.1rem;
 
@@ -27,11 +27,11 @@
   b { font-weight: 600; }
 }
 
- .PortfolioItem {
+ .WorkItem {
    margin-bottom: 24rem;
  }
 
- .PortfolioItem__graphic {
+ .WorkItem__graphic {
    display: block;
    height: 300px;
    background-color: #eaeaea;
@@ -46,12 +46,13 @@
    }
 
    &.fitt-redesign   { background-image: url('/assets/images/fitt-redesign@2x.png'); }
+   &.apothekary-quiz { background-image: url('/assets/images/apothekary-quiz@2x.png'); }
    &.territory-brand { background-image: url('/assets/images/territory-brand@2x.png'); }
    &.ps-markets      { background-image: url('/assets/images/ps-markets@2x.png'); }
    &.ps-menu         { background-image: url('/assets/images/ps-menu@2x.png'); }
  }
 
- .PortfolioItem__content {
+ .WorkItem__content {
    padding: 1em 0;
 
    @include media-sm-up {
@@ -59,7 +60,7 @@
    }
  }
 
- .PortfolioItem__context {
+ .WorkItem__context {
    font-size: 1rem;
    font-weight: 600;
    letter-spacing: .05em;
@@ -71,7 +72,7 @@
    }
  }
 
- .PortfolioItem__title {
+ .WorkItem__title {
    color: #1D2022;
    font-size: 2.5rem;
    font-weight: 600;
@@ -84,7 +85,7 @@
    }
  }
 
-.PortfolioItem__snippet {
+.WorkItem__snippet {
   color: #333333;
   padding-right: 2.1rem;
   font-size: 1.5rem;
@@ -94,7 +95,7 @@
   }
 }
 
-.PortfolioItem__cta {
+.WorkItem__cta {
   font-size: 1.3rem;
 
   @include media-sm-up {
