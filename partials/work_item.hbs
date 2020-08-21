@@ -1,0 +1,22 @@
+<div class="WorkItem">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <figure class="WorkItem__graphic {{ graphic_class }}"></figure>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <div class="WorkItem__content">
+        <h5 class="WorkItem__context">{{year}} · {{role}} · {{company}}</h5>
+        <h3 class="WorkItem__title">{{title}}</h3>
+        <p class="WorkItem__snippet">{{snippet}}</p>
+        <a href="{{ study_url }}" class="Button WorkItem__cta">
+          {{# if cta_text }}
+            {{ cta_text }}
+          {{else}}
+            Read the case study ->
+          {{/if}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

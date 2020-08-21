@@ -8,8 +8,20 @@ Made with ❤️ in California. Hosted on [DigitalOcean](https://www.digitalocea
 ### Development
 
 1. Run `yarn install` to get the goods
-2. Run `yarn grunt` to kick off Grunt (watch SASS / compile JS)
+3. Use `yarn start` to kick off the SASS watching. This should be enough.
 
 ### Deploy
 
-After updating theme, you need to restart the `ghost` service via ssh console on DigitalOcean. I can't remember how to login to the ghost user, so after uploading the changes, I just run the `reboot` command on th droplet to restart the thing :shrug:
+1. Use Transmit 5 to connect SFTP to DigitalOcean server.
+2. Yup, drag + drop `/var/www/paulmederos.com/content/themes/pm15-blog`
+3. Restart Ghost service
+
+To restart:
+
+1. SSH into DigitalOcean `ssh root@167.99.161.231` and enter password
+2. switch to user with `su paul`
+3. `cd /var/www/paulmederos.com`
+4. `ghost restart`
+5. Good to go 🎉
+
+If all else fails, you can type `reboot` as root to restart the server.

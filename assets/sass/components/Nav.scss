@@ -5,17 +5,47 @@
 }
 
 .Nav__intro {
-  margin-bottom: 2em;
+  margin-bottom: auto;
+
   @include media-sm-up {
     margin-bottom: 0;
   }
 }
 
+.Logo {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: auto 0;
+  background-image: url('/assets/images/Logo@2x.png');
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  @include transition;
+
+  &:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 5px rgba(0,0,0,.15);
+    @include transition;
+  }
+
+  &:active {
+    transform: scale(.92);
+    box-shadow: 0;
+    @include transition;
+  }
+
+}
+
 .Nav__item {
-  margin-right: 2em;
-  
+  margin: auto 1em;
+  font-size: 1.2rem;
+
   @include media-sm-up {
     margin-left: 2em;
     margin-right: 0;
+    font-size: 1.5rem;
   }
 }

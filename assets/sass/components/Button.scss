@@ -1,0 +1,45 @@
+.Button {
+  display: block;
+  padding: 1.3em 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  cursor: pointer;
+  @include transition;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #1D2022;
+    box-shadow: 0 3px 6px rgba(0,0,0,.18);
+    @include transition;
+  }
+
+  &:active {
+    color: white;
+    transform: translateY(1px);
+    background-color: black;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    @include transition;
+  }
+
+  &.isDisabled {
+    background-color: #aaa;
+    color: white;
+    box-shadow: none;
+    @include transition;
+    &:hover { text-decoration: none; cursor: default; }
+    &:active { transform: none; }
+  }
+}
+
+a.Button {
+  display: inline-block;
+  text-decoration: none;
+}

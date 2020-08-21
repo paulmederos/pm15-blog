@@ -16,7 +16,12 @@
   -ms-animation-duration:.5s;
   -o-animation-duration:.5s;
   animation-duration:.5s;
-} 
+}
+
+.animated.delayed-short {
+  animation-delay:.5s;
+  -webkit-animation-delay:.5s; /* Safari and Chrome */
+}
 
 .animated.delayed {
   animation-delay:1s;

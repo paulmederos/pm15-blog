@@ -1,0 +1,61 @@
+.CaseStudy {
+  padding-top: 0;
+  background-color: white;
+
+  .container-fluid { max-width: 1200px; }
+}
+
+.CaseStudy__hero {
+  background-color: #fafafa;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media-sm-up {
+    height: 360px;
+  }
+}
+
+.CaseStudy__header {}
+
+.CaseStudy__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 6.4rem;
+  padding-top: 6.4rem;
+
+  @include media-sm-up {
+    font-size: 4.4rem;
+  }
+}
+
+.CaseStudy__content {
+  font-size: 1.8rem;
+  padding-bottom:4em;
+  margin-bottom:4em;
+
+  a { text-decoration: underline; color: $color_warm_slate; }
+  a:hover { text-decoration-style: wavy;  color: black; }
+  b, strong { font-weight: 600; }
+
+  h3 { margin-top: 9.6rem; color: #000; font-size: 2.5rem; }
+
+  figcaption {
+    font-size: 1.3rem;
+    color: #97a0aa;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 4.4rem;
+    margin-top: 4px;
+  }
+}
+
+.CaseStudy__footer {
+  position: relative;
+  padding-bottom: 6em;
+}
+
+.CaseStudy .kg-image-card {
+  margin: 3.2rem auto;
+}

@@ -1,0 +1,32 @@
+{{!< default}}
+<article class="CaseStudy {{post_class}}">
+  {{#post}}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{title}}" />
+    <meta name="twitter:url" content="{{url absolute='true'}}" />
+    <meta name="twitter:description" content="{{excerpt words=40}}..." />
+
+    {{#if feature_image}}
+      <figure class="CaseStudy__hero animated animated-slow fadeIn" style="background-image: url({{img_url feature_image}})"></figure>
+    {{/if}}
+
+    <div class="container-fluid animated fadeInUp">
+      <div class="row center-xs text-left">
+        <div class="col-xs-12 col-sm-9 col-md-8 col-lg-7 col-xl-4">
+          <header class="CaseStudy__header text-center">
+            <h1 class="CaseStudy__title">{{title}}</h1>
+          </header>
+
+          <section class="CaseStudy__content">
+            {{content}}
+          </section>
+
+          <footer class="CaseStudy__footer center-xs">
+            <a href="/work" class="Button">Back to work portfolio</a>
+          </footer>
+        </div>
+      </div>
+  {{/post}}
+</article>
+
+{{> "collab_bar"}}

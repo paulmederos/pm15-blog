@@ -1,0 +1,104 @@
+.Work {
+  min-height: 100vh;
+  padding-bottom: 9.6rem;
+  background-color: white;
+}
+
+.Work__header {
+  padding-top: 16rem;
+  margin-bottom: 16rem;
+
+  @include media-sm-up {
+    padding-top: 19.2rem;
+    margin-bottom: 19.2rem;
+  }
+}
+
+.Work__title {
+  font-weight: 350;
+  font-size: 2.1rem;
+
+  color: #1D2022;
+
+  @include media-sm-up {
+    font-size: 6.4rem;
+  }
+
+  b { font-weight: 600; }
+}
+
+ .WorkItem {
+   margin-bottom: 24rem;
+ }
+
+ .WorkItem__graphic {
+   display: block;
+   height: 300px;
+   background-color: #eaeaea;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   @include media-sm-up {
+     height: 420px;
+     margin-right: 2.1rem;
+     border-radius: 8px;
+   }
+
+   &.fitt-redesign   { background-image: url('/assets/images/fitt-redesign@2x.png'); }
+   &.apothekary-quiz { background-image: url('/assets/images/apothekary-quiz@2x.png'); }
+   &.territory-brand { background-image: url('/assets/images/territory-brand@2x.png'); }
+   &.ps-markets      { background-image: url('/assets/images/ps-markets@2x.png'); }
+   &.ps-menu         { background-image: url('/assets/images/ps-menu@2x.png'); }
+ }
+
+ .WorkItem__content {
+   padding: 1em 0;
+
+   @include media-sm-up {
+     padding: 0 1em;
+   }
+ }
+
+ .WorkItem__context {
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: .05em;
+   text-transform: uppercase;
+   color: #888888;
+
+   @include media-sm-up {
+     font-size: 1.3rem;
+   }
+ }
+
+ .WorkItem__title {
+   color: #1D2022;
+   font-size: 2.5rem;
+   font-weight: 600;
+   line-height: 1.24;
+   text-transform: normal;
+   margin-bottom: 1em;
+
+   @include media-sm-up {
+     font-size: 3.6rem;
+   }
+ }
+
+.WorkItem__snippet {
+  color: #333333;
+  padding-right: 2.1rem;
+  font-size: 1.5rem;
+
+  @include media-sm-up {
+    font-size: 1.8rem;
+  }
+}
+
+.WorkItem__cta {
+  font-size: 1.3rem;
+
+  @include media-sm-up {
+    font-size: 1.5rem;
+  }
+}
