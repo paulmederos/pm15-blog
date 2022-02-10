@@ -6,7 +6,7 @@
   },
   "keywords": ["ghost-theme"],
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "grunt-cli": "^1.2.0"
